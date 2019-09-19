@@ -1,0 +1,30 @@
+<!-- templates/email.html-->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang = 'en'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <title> Contact Form </title>
+    <link rel="stylesheet" href="{% static 'email.css' %}">
+  </head>
+
+  <body>
+    <h1>We'd love to partner with you. Reach out to us below.</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="{{ form.from_email.id_for_label }}">Email</label>
+        {{form.from_email}}
+        <label for="{{ form.subject.id_for_label }}">Subject</label>
+        {{form.subject}}
+        <label for="{{ form.message.id_for_label }}">Message</label>
+        {{form.message}}
+
+        <button type="submit">Send</button>
+    </form>
+  </body>
+
+</html>
