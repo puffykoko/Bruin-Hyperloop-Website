@@ -34,5 +34,6 @@
   "devDependencies": {},
   "keywords": [],
   "author": "Matthew Ko",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "http://bruinhyperloop.herokuapp.com/",
 }
