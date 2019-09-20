@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',  '@ix(rneya%!m@4^(k7s1^65rh9s8(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['bruinhyperloop.herokuapp.com']
+ALLOWED_HOSTS = ['bruinhyperloop.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
