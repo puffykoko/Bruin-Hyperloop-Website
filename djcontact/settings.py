@@ -100,7 +100,7 @@ USE_TZ = True
 
 #Email Settings
 from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['EMAIL_HOST_PASSWORD'))
+s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'], os.environ['EMAIL_HOST_PASSWORD'])
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
