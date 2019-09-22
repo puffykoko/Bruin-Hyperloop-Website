@@ -17,11 +17,10 @@ class FrontendAppView(View):
 
     def get(self, request):
         try:
-            with open(os.path.join(settings.REACT_APP_DIR, 'build', 'index.html')) as f:
+            with open(os.path.join(settings.REACT_APP_DIR, 'build', 'foo.html')) as f:
                 return HttpResponse(f.read())
         except FileNotFoundError:
             logging.exception('Production build of app not found')
-            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             return HttpResponse(
                 """
                 This URL is only used when you have built the production
