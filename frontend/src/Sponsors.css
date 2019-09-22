@@ -1,0 +1,49 @@
+.SponsorTitle{
+  position: relative;
+  font-size: calc(15px + 2vmin);
+  margin: 0 0 5vh 15vw;
+  color: #7AB0E5;
+}
+
+.Sponsor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.Sponsor:hover{
+  opacity: .9;
+}
+
+.Sponsors{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20vw;
+}
+
+.SponsorsPage{
+  background-color: rgba(245,245,245, 0.5);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .Sponsor{
+    width: 40%;
+    margin: 5vh auto;
+  }
+  .SponsorsPage{
+    text-align: center;
+  }
+
+  .SponsorTitle{
+    margin-left: 0;
+  }
+
+}

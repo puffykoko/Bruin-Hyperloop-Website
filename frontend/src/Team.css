@@ -1,0 +1,111 @@
+
+img{
+  width: 100%;
+}
+
+.icon{
+  width: 9%;
+  margin-top: auto;
+  margin-bottom: 1vh;
+  align-self: flex-end;
+}
+
+.Headshot{
+  position: absolute;
+  width: 100%;
+}
+
+
+.Headshot-Container{
+  display: block;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  border-radius: 50%;
+  background-color: rgb(245,245,245);
+  overflow: hidden;
+}
+
+.Headshot{
+  display: block;
+  margin: 0 auto;
+}
+
+
+.Name{
+  font-size: calc(5px + 2vmin);
+  margin-bottom: 1px;
+}
+
+.Position{
+  font-size: calc(5px + 1.5vmin);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  color: #317FB8;
+}
+
+.Major{
+  font-size: calc(5px + 1.2vmin);
+  padding: 0;
+  margin: 0;
+  color: black;
+  margin-bottom: 2px;
+}
+
+.Biography{
+  font-size: calc(5px + 1.2vmin);
+  margin: calc(10px + 2vmin) 0;
+  width: 80%;
+  //height: 15vh;
+}
+
+.Member{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  box-sizing: border-box;
+  width: 45%;
+  min-width: 200px;
+  margin: 5vh 0;
+  padding: 2.5%;
+
+  border: 3px solid rgb(245,245,245);
+  border-radius: 5px;
+  background-color: rgb(253,253,253);
+}
+
+.Rows{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.SubTeam{
+  margin: 10vh 15vw;
+  padding: 0 10vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .SubTeam{
+    margin: 10vh 5vw;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .Member{
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .SubTeam{
+    margin: 10vh 10vw;
+  }
+}

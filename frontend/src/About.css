@@ -1,0 +1,129 @@
+a{
+  color: #317FB8;
+  text-decoration: none;
+}
+
+.Line{
+  background-color: #abcdef;
+  height: 0.25vh;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.Banner-Title{
+  font-size: calc(20px + 4vmin);
+  margin: 0 auto;
+  //background-color: blue;
+  padding: 0;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+}
+
+.Banner-Text{
+  display: block;
+  font-size: calc(10px + 2vmin);
+  padding: 0;
+  margin: calc(1vmin);
+  animation-name: fadein;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.LogoBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 70vh;
+  //margin-top: -1vh;
+
+  background-color: rgb(245,245,245);
+  background-image: linear-gradient(rgb(40,40,40,.6), rgb(40,40,40,.5)), url('main-photo.jpg');
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+
+  color: rgb(245,245,245);
+
+}
+
+.Banner-Photo{
+  max-width: 100%;
+  max-height: 110%;
+}
+
+.Logo{
+  width: 80vw;
+  max-width: 500px;
+  //display: block;
+  //margin-left: auto;
+  //margin-right: auto;
+}
+
+
+.ContentSection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  margin: 10vh auto;
+  padding: 0;
+}
+
+.ContentSection.Reverse{
+  flex-wrap: wrap-reverse;
+}
+
+.Content-Section-Title{
+  font-size: calc(10px + 2.5vmin);
+  color: #7AB0E5;
+}
+
+
+.Content-Section-Image{
+  width: 25%;
+}
+
+.Content-Section-Text{
+  width: 65%;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .LogoBanner{
+    min-height: 60vh;
+  }
+
+  .ContentSection{
+    justify-content: center;
+    text-align: center;
+  }
+  .Content-Section-Image{
+    width: 40%;
+    max-width: 150px;
+  }
+  .Content-Section-Text{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .LogoBanner{
+    min-height: 50vh;
+  }
+}

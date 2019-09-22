@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+form{
+  width: 100%;
+}
+
+.Error-Message-Contact{
+  font-size: calc(5px + 1.5vmin);
+  color: white;
+}
+
+.Input-Contact{
+  margin-bottom: calc(5px + 1.5vmin);
+}
+
+.Input-Text-Contact{
+  width: 100%;
+}
+
+.Textbox-Contact{
+  margin-bottom: calc(5px + 1.5vmin);
+}
+
+.Textbox-Text-Contact{
+  width: 100%;
+  height: 30vh;
+}
+
+.Send-Button-Contact{
+  border-radius: 15px;
+  padding: 5px 20px;
+  display: block;
+  margin-left: auto;
+
+  border: 1.5px solid white;
+  background-color: inherit;
+  color: inherit;
+  font-weight: bold;
+
+}
+
+.Send-Button-Contact:hover{
+  background-color: #B7D4F1;
+}
+
+.ContactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-size: calc(5px + 2vmin);
+  //height: 65vh;
+}

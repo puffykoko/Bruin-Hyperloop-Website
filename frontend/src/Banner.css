@@ -1,0 +1,132 @@
+.Banner{
+  /*flex*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  /*sizing and color*/
+  box-sizing: border-box;
+  padding: 10vh 15vw;
+  margin-top: -1vh;
+  overflow: hidden;
+  background-color: #abcdef;
+  color: white;
+
+}
+
+
+/**everything on left side of banner**/
+
+.BannerLeft{
+  width: 30vw;
+}
+
+.BannerText{
+  font-size: calc(5px + 2vmin);
+}
+
+.BannerTitle{
+  font-size: calc(25px + 3vmin);
+  padding: 0;
+  margin: 0;
+}
+
+.Contact-Button{
+  display: block;
+  border: 1px solid white;
+  border-radius: calc(5px + 2vmin);
+  padding: 1vh calc(5px + 2vmin);
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.Contact-Button:hover{
+  background-color: #B7D4F1;
+}
+
+.Contact-Button.active{
+  background-color: #B7D4F1;
+}
+
+/*everything on right side of banner*/
+
+.BannerRight{
+  width: 30vw;
+  max-height: 18vw;
+  transition: max-height 0.8s ease-out;
+}
+
+/*smoothly adjust height of banner*/
+.BannerRight.HoldForm{
+  max-height: 65vh;
+  transition: max-height 0.8s ease-out;
+}
+
+.Gears-Filler{
+  height: calc(65vh - 18vw);
+}
+
+.BannerRight.HoldThankYou{
+  max-height: 18vw;
+  transition: max-height 0.8s ease-out;
+}
+
+.Thank-You-Filler{
+    height: calc(65vh - 18vw);
+}
+
+
+.Thank-You{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  font-size: calc(5px + 3vmin);
+  color: white;
+  text-align: center;
+  height: 18vw;
+  padding: 0;
+  margin: 0;
+}
+
+/*fade in form*/
+.hide{
+  opacity: 0;
+}
+
+.show{
+  transition: opacity 1.2s;
+  opacity: 1.2;
+}
+
+
+/*responsiveness*/
+@media only screen and (max-width: 700px) {
+  .BannerLeft{
+    width: 60vw;
+    margin-bottom: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .BannerRight{
+    width: 60vw;
+    max-height: 36vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Banner-Right-Filler{
+    height: calc(65vh - 36vw);
+  }
+
+  .Contact-Button{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,31 @@
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1vh 5vw;
+}
+
+.Footer-Text{
+  text-align: right;
+  font-size: calc(5px + 1vmin);
+  color: grey;
+}
+
+.Footer-Text p {
+  padding: 0;
+  margin: calc(2.5px + 0.5vmin);
+}
+
+.Social-Media img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.Social-Media img:hover{
+  opacity: 1;
+  transition: opacity .1s;
+}

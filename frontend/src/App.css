@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+.App {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.Horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Divider{
+  height: 1vh;
+  background-image: linear-gradient(rgb(245,245,245), white);
+  margin: 0;
+}
