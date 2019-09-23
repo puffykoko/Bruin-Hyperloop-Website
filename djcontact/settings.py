@@ -3,7 +3,8 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',  '@ix(rneya%!m@4^(k7s1^65rh9s8(%4!+t@s@a(2(p+9y(59wu')
+# The provided default key is used in development only.
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '@ix(rneya%!m@4^(k7s1^65rh9s8(%4!+t@s@a(2(p+9y(59wu')
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 ALLOWED_HOSTS = ['bruinhyperloop.herokuapp.com', '127.0.0.1']
 
@@ -99,12 +100,11 @@ USE_L10N = True
 USE_TZ = True
 
 #Email Settings
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'], os.environ['EMAIL_HOST_PASSWORD'])
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_API_KEY')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
