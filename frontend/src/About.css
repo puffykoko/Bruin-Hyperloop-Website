@@ -50,7 +50,7 @@ a{
   //margin-top: -1vh;
 
   background-color: rgb(245,245,245);
-  background-image: linear-gradient(rgb(40,40,40,.6), rgb(40,40,40,.5)), url('images/photos/banner-photo.jpg');
+  background-image: linear-gradient(rgb(40,40,40,.6), rgb(40,40,40,.5)), url('main-photo.jpg');
   background-size: cover;
   background-position: 50% 25%;
   background-repeat: no-repeat;

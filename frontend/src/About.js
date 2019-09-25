@@ -3,7 +3,7 @@ import './About.css';
 import './App.css';
 
 import graphic1 from './images/graphics/rocket.svg';
-import graphic2 from './images/graphics/paper.svg';
+import graphic2 from './images/graphics/sketch.svg';
 
 var mission = "Our goal is to design and build a to-scale pod capable of\
                challenging in the annual SpaceX Hyperloop Competition. \
